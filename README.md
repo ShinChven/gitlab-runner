@@ -2,6 +2,8 @@
 
 docker-compose deployment and configs
 
+## docker-compose deployment
+
 ```yaml
 version: "3.5"
 
@@ -15,6 +17,14 @@ services:
       - "/etc/gitlab-runner:/etc/gitlab-runner"
       - "/var/run/docker.sock:/var/run/docker.sock"
 ```
+
+## register a runner
+
+```bash
+docker exec -it gitlab-runner gitlab-runner register
+```
+
+## modify configs
 
 ```toml
 concurrent = 1
