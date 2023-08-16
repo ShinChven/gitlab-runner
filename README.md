@@ -10,7 +10,7 @@ version: "3.5"
 services:
 
   runner:
-    image: gitlab/gitlab-runner:alpine
+    image: gitlab/gitlab-runner
     container_name: gitlab-runner
     restart: always
     volumes:
