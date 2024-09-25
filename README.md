@@ -35,9 +35,9 @@ check_interval = 0
   [runners.docker]
     image = "ubuntu"
     volumes = [
-      "/usr/bin/docker:/usr/bin/docker"
+      "/usr/bin/docker:/usr/bin/docker",
       "/var/run/docker.sock:/var/run/docker.sock",
-      "/usr/libexec/docker/:/usr/libexec/docker/"
+      "/usr/libexec/docker/:/usr/libexec/docker/",
       "/cache"
     ]
     shm_size = 0
